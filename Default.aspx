@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Delightful Profile Flat Responsive Widget Template :: w3layouts</title>
+<title>Entity CV Projesi</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -30,7 +30,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<div class="main">	
-		<h1>Delightful Profile</h1>
+		<h1> Yazılım Kimlik Kartı </h1>
 		<div class="w3_agile_main_grids">
 			<div class="w3layouts_main_grid_left">	
 				<div class="w3_main_grid_left_grid">	
