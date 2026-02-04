@@ -33,14 +33,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<h1> Yazılım Kimlik Kartı </h1>
 		<div class="w3_agile_main_grids">
 			<div class="w3layouts_main_grid_left">	
-				<div class="w3_main_grid_left_grid">	
-                    <asp:Repeater runat="server">
-                        <ItemTemplate>
-							<h2><% Eval("BILGILER") %>  </h2>
-                        </ItemTemplate>
-                    </asp:Repeater>
+				<div class="w3_main_grid_left_grid">
+					<asp:Repeater ID="Repeater1" runat="server"></asp:Repeater>
+					<ItemTemplate>
+						<h2><%# Eval("AdSoyad") %> </h2>
+						<p><%# Eval("Meslek") %></p>						
+					</ItemTemplate>
 					
-					<p>Meslek</p>
 					<div class="w3l_figure">
 						<img src="web/images/1.png" alt=" " />
 					</div>
@@ -48,7 +47,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li><a href="#" class="w3_agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="agileinfo_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-
 					</ul>
 				</div>
 			</div>
@@ -62,8 +60,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><i class="fa fa-map-info" aria-hidden="true"></i>Yardım</li>
 						</ul>
 						<div class="resp-tabs-container hor_1">
-							<div class="agileits_main_grid_right_grid">	
-								<p>  </p>
+							<div class="agileits_main_grid_right_grid">
+								<div style ="font-size:x-large; font-weight: bolder; color: #800000; margin-bottom:15px">
+								<h3> Eğitim Hayatım </h3>
+									</div>
+								<p>
+								<asp:Repeater ID="Repeater2" runat="server">
+									<ItemTemplate>
+										<%# Eval("EGITIM") %>
+									</ItemTemplate>
+								</asp:Repeater>
+								
+								</p>
 								<div class="wthree_tab_grid_sub">
 									<div class="wthree_tab_grid_sub_left">
 										<h5>321</h5>
