@@ -13,10 +13,7 @@ namespace CvEntityProje
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Repeater1.DataSource = db.TBLHAKKIMDA.ToList();
-            Repeater1.DataBind();
-            Repeater2.DataSource = db.TBLHAKKIMDA.ToList();
-            Repeater2.DataBind();
+           
         }
     }
 }
