@@ -22,8 +22,7 @@ namespace CvEntityProje
             Repeater4.DataSource = db.TBLYETENEKLER.ToList();
             Repeater4.DataBind();
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void button1_Click(object sender, EventArgs e)
         {
             TBLILETISIM t = new TBLILETISIM();
             t.ADSOYAD = TextBox1.Text;
@@ -33,6 +32,7 @@ namespace CvEntityProje
             db.TBLILETISIM.Add(t);
             db.SaveChanges();
         }
+
     }
 
 }
